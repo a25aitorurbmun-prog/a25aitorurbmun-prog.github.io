@@ -1,81 +1,83 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horario clase</title>
-<h1>Horario clase </h1>
+    <title>Horario de clase</title>
+    <link rel="stylesheet" href="../../../../estilohorario.css">
+</head>
 <body>
-<<table style="border-collapse: collapse;">
-    <thead>
-        <tr>
-            <th scope="col" style="border: 1px solid black;"></th>
-            <th scope="col" style="border: 1px solid black;">Lunes</th>
-            <th scope="col" style="border: 1px solid black;">Martes</th>
-            <th scope="col" style="border: 1px solid black;">Miércoles</th>
-            <th scope="col" style="border: 1px solid black;">Jueves</th>
-            <th scope="col" style="border: 1px solid black;">Viernes</th>
-        </tr>
-    </thead>
+    <h1>Horario clase</h1>
+    <div class="contenedor-horario">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Lunes</th>
+                    <th scope="col">Martes</th>
+                    <th scope="col">Miércoles</th>
+                    <th scope="col">Jueves</th>
+                    <th scope="col">Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">8:15 a 9:15</th>
+                    <td class="materia-sor">Sor</td>
+                    <td rowspan="2" class="materia-sor">Sor</td>
+                    <td class="materia-opw">Opw</td>
+                    <td rowspan="2" class="materia-si">Sí</td>
+                    <td rowspan="2" class="materia-si">Sí</td>
+                </tr>
+                <tr>
+                    <th scope="row">9:15 a 10:15</th>
+                    <td class="materia-apw">Apw</td>
+                    <td class="materia-apw">Apw</td>
+                </tr>
+                <tr>
+                    <th scope="row">10:15 a 11:15</th>
+                    <td class="materia-ser">Ser</td>
+                    <td class="materia-ingles">Inglés</td>
+                    <td class="materia-ser">Ser</td>
+                    <td class="materia-sor">Sor</td>
+                    <td class="materia-opw">Opw</td>
+                </tr>
+                <tr>
+                    <th scope="row">11:15 a 11:45</th>
+                    <td colspan="5" class="recreo">Recreo</td>
+                </tr>
+                <tr>
+                    <th scope="row">11:45 a 12:45</th>
+                    <td class="materia-pi">Pi</td>
+                    <td class="materia-ipe">Ipe</td>
+                    <td class="materia-sor">Sor</td>
+                    <td class="materia-ser">Ser</td>
+                    <td class="materia-ipe">Ipe</td>
+                </tr>
+                <tr>
+                    <th scope="row">12:45 a 13:45</th>
+                    <td class="materia-opw">Opw</td>
+                    <td rowspan="2" class="materia-ser">Ser</td>
+                    <td class="materia-pi">Pi</td>
+                    <td rowspan="2" class="materia-apw">Apw</td>
+                    <td class="materia-sor">Sor</td>
+                </tr>
+                <tr>
+                    <th scope="row">13:45 a 14:45</th>
+                    <td class="materia-ipe">Ipe</td>
+                    <td class="materia-ingles">Inglés</td>
+                    <td class="materia-ser">Ser</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="6">Fin de la jornada: 14:45</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <a href="../index.html">Volver a inicio</a>
+</body>
+</html>
 
-    <tbody>
-        <tr>
-            <th scope="row" style="border: 1px solid black;">8:15 a 9:15</th>
-            <td style="border: 1px solid black;">Sor</td>
-            <td rowspan="2" style="border: 1px solid black;">Sor</td>
-            <td style="border: 1px solid black;">Opw</td>
-            <td rowspan="2" style="border: 1px solid black;">Sí</td>
-            <td rowspan="2" style="border: 1px solid black;">Sí</td>
-        </tr>
-        <tr>
-            <th scope="row" style="border: 1px solid black;">9:15 a 10:15</th>
-            <td style="border: 1px solid black;">Apw</td>
-            <td style="border: 1px solid black;">Apw</td>
-        </tr>
-        <tr>
-            <th scope="row" style="border: 1px solid black;">10:15 a 11:15</th>
-            <td style="border: 1px solid black;">Ser</td>
-            <td style="border: 1px solid black;">Inglés</td>
-            <td style="border: 1px solid black;">Ser</td>
-            <td style="border: 1px solid black;">Sor</td>
-            <td style="border: 1px solid black;">Opw</td>
-        </tr>
-        <tr>
-            <th scope="row" style="border: 1px solid black;">11:15 a 11:45</th>
-            <td colspan="5" style="border: 1px solid black; text-align: center;">Recreo</td>
-        </tr>
-        <tr>
-            <th scope="row" style="border: 1px solid black;">11:45 a 12:45</th>
-            <td style="border: 1px solid black;">Pi</td>
-            <td style="border: 1px solid black;">Ipe</td>
-            <td style="border: 1px solid black;">Sor</td>
-            <td style="border: 1px solid black;">Ser</td>
-            <td style="border: 1px solid black;">Ipe</td>
-        </tr>
-        <tr>
-            <th scope="row" style="border: 1px solid black;">12:45 a 13:45</th>
-            <td style="border: 1px solid black;">Opw</td>
-            <td rowspan="2" style="border: 1px solid black;">Ser</td>
-            <td style="border: 1px solid black;">Pi</td>
-            <td rowspan="2" style="border: 1px solid black;">Apw</td>
-            <td style="border: 1px solid black;">Sor</td>
-        </tr>
-        <tr>
-            <th scope="row" style="border: 1px solid black;">13:45 a 14:45</th>
-            <td style="border: 1px solid black;">Ipe</td>
-            <td style="border: 1px solid black;">Inglés</td>
-            <td style="border: 1px solid black;">Ser</td>
-        </tr>
-    </tbody>
-
-    <tfoot>
-        <tr>
-            <th colspan="6" style="border: 1px solid black;">Fin de la jornada: 14:45</th>
-        </tr>
-    </tfoot>
-</table>
-
-<a href="../index.html">Volver a inicio</a>
-<footer>
-    <p>© 2026 Horario de clases.</p>
-    
+<link rel="stylesheet" href="../estiloscss/estilohorario.css">
